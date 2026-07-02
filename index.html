@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-
     <title>AI French Poem Generator</title>
   </head>
-
   <body>
     <div class="container">
       <header>
@@ -20,31 +17,29 @@
         <form id="poem-generator-form">
           <input
             type="text"
-            id="user-instructions"
-            class="instructions"
-            placeholder="Enter the topic of the French poem here"
-            autocomplete="off"
-            required
+            placeholder="Enter the topic of the French poem"
             autofocus
+            required
+            autocomplete="off"
+            class="instructions"
           />
-
-          <input type="submit" class="submit-button" value="submit" />
+          <input type="submit" class="submit-button" />
         </form>
-
         <div class="poem" id="poem"></div>
       </main>
 
       <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com/H4d14" target="_blank">Hadia Amin</a>
-          and is on
-          <a href="https://github.com/H4d14/peom" target="_blank">GitHub</a>
-          and hosted on Netlify
-        </p>
+        This AI project was coded by
+        <a href="https://github.com/H4d14" target="_blank">Matt Delac</a>
+        and is
+        <a href="https://github.com/H4d14/peom" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="" target="_blank">hosted on Netlify</a>.
       </footer>
     </div>
 
-    <script src="/src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

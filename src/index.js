@@ -1,21 +1,13 @@
 function generatePoem(event) {
   event.preventDefault();
 
-  const input = document.querySelector("#user-instructions");
-  const poemElement = document.querySelector("#poem");
-
-  poemElement.innerHTML = "";
-
-  new Typewriter(poemElement, {
-    strings:
-      "Chauffez au feu vos mains, chauffez à Dieu votre âme. Aimez, vivez.",
+  new Typewriter("#poem", {
+    strings: "La tombe dit à la rose",
     autoStart: true,
-    delay: 40,
+    delay: 1,
     cursor: "",
   });
-
-  console.log(input.value);
 }
 
-const form = document.querySelector("#poem-generator-form");
-form.addEventListener("submit", generatePoem);
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit", generatePoem);
