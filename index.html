@@ -3,41 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Document</title>
+
+    <title>AI French Poem Generator</title>
   </head>
+
   <body>
     <div class="container">
-      <header><h1>AL French Peom Generator</h1></header>
+      <header>
+        <h1>AI French Poem Generator</h1>
+      </header>
+
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter the topic of the French peom here"
-            autofocus
-            required
-            autocomplete="off"
+            id="user-instructions"
             class="instructions"
+            placeholder="Enter the topic of the French poem here"
+            autocomplete="off"
+            required
+            autofocus
           />
-          <input type="submit" class="submit-button" />
+
+          <input type="submit" class="submit-button" value="submit" />
         </form>
-        <div class="peom">
-          Chauffez au feu vos mains, chauffez à Dieu votre âme.
-          <br />
-          Aimez, vivez.
-        </div>
+
+        <div class="poem" id="poem"></div>
       </main>
+
       <footer>
         <p>
           This project was coded by
-          <a href="https://github.com/H4d14" target="_blank">Hadia Amin</a> and
-          is
-          <a href="https://github.com/H4d14/peom" target="_blank"> on GitHub</a>
-          and
-          <a href="" target="_blank">hosted on Netlify</a>
+          <a href="https://github.com/H4d14" target="_blank">Hadia Amin</a>
+          and is on
+          <a href="https://github.com/H4d14/peom" target="_blank">GitHub</a>
+          and hosted on Netlify
         </p>
       </footer>
     </div>
+
     <script src="/src/index.js"></script>
   </body>
 </html>
